@@ -3,16 +3,28 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
+
+    background-color: var(--background-accent-color);
+    width: 260px;
+    height: 150px;
+    border-radius: 15px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 50px -10px rgba(23, 77, 70, 1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   .forecast_list_item {
-    margin-top: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .forecast_day {
+    margin-left: 15px;
     margin-right: 5px;
     width: 80px;
   }
@@ -29,7 +41,108 @@
     margin-right: 15px;
   }
 
-  .forecast_mintemp {
+  .minus_accent {
+    margin-left: -8px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .forecast_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .forecast_list_item {
+    background-color: var(--background-accent-color);
+    width: 230px;
+    height: 150px;
+    border-radius: 15px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 50px -10px rgba(23, 77, 70, 1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .forecast_day {
+    width: 80px;
+
+    margin-left: 15px;
+    margin-right: 80px;
+  }
+
+  .forecast_icon {
+    width: 35px;
+    height: 35px;
+
+    margin-right: 20px;
+    filter: drop-shadow(0px 0px 0px #fff);
+  }
+
+  .forecast_maxtemp {
+    width: 40px;
+
+    margin-left: 15px;
+    margin-right: 125px;
+  }
+
+  .minus_accent {
+    margin-left: -8px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .forecast_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .forecast_list_item {
+    background-color: var(--background-accent-color);
+    width: 330px;
+    height: 200px;
+    border-radius: 15px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 50px -10px rgba(23, 77, 70, 1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .forecast_day {
+    margin-right: 5px;
+    width: 80px;
+    margin-left: 60px;
+    margin-right: 80px;
+  }
+
+  .forecast_icon {
+    width: 35px;
+    height: 35px;
+
+    margin-right: 20px;
+    filter: drop-shadow(0px 0px 0px #fff);
+  }
+
+  .forecast_maxtemp {
+    width: 40px;
+
+    margin-left: 60px;
+    margin-right: 125px;
   }
 
   .minus_accent {

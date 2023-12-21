@@ -20,26 +20,10 @@ export const ForecastList = ({ forecast }) => {
           />
 
           <div className={styles.forecast_maxtemp}>
-            <div
-              className={
-                forecast.forecastday[1].day.maxtemp_c < 0
-                  ? styles.minus_accent
-                  : ""
-              }
-            >
-              {forecast.forecastday[1].day.maxtemp_c}°
-            </div>
+            {forecast.forecastday[1].day.maxtemp_c}°
           </div>
           <div className={styles.forecast_mintemp}>
-            <div
-              className={
-                forecast.forecastday[1].day.mintemp_c < 0
-                  ? styles.minus_accent
-                  : ""
-              }
-            >
-              {forecast.forecastday[1].day.mintemp_c}°
-            </div>
+            {forecast.forecastday[1].day.mintemp_c}°
           </div>
         </li>
         <li className={styles.forecast_list_item}>
@@ -54,26 +38,10 @@ export const ForecastList = ({ forecast }) => {
             src={forecast.forecastday[2].day.condition.icon}
           />
           <div className={styles.forecast_maxtemp}>
-            <div
-              className={
-                forecast.forecastday[2].day.maxtemp_c < 0
-                  ? styles.minus_accent
-                  : ""
-              }
-            >
-              {forecast.forecastday[2].day.maxtemp_c}°
-            </div>
+            {forecast.forecastday[2].day.maxtemp_c}°
           </div>
           <div className={styles.forecast_mintemp}>
-            <div
-              className={
-                forecast.forecastday[2].day.mintemp_c < 0
-                  ? styles.minus_accent
-                  : ""
-              }
-            >
-              {forecast.forecastday[2].day.mintemp_c}°
-            </div>
+            {forecast.forecastday[2].day.mintemp_c}°
           </div>
         </li>
       </ul>

@@ -3,7 +3,6 @@
     overflow: auto;
     height: inherit;
     width: 110px;
-    /* border-right: solid 1px black; */
   }
 
   .list {
@@ -31,6 +30,80 @@
   }
   .icon {
     width: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0px 0px 0px #fff);
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .scrollableContainer {
+    overflow: auto;
+    height: inherit;
+    width: 150px;
+  }
+
+  .list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  .listItem {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+  }
+  .time {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .temp {
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: auto;
+  }
+  .icon {
+    width: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0px 0px 0px #fff);
+  }
+}
+@media (min-width: 1280px) {
+  .scrollableContainer {
+    overflow: auto;
+    height: inherit;
+    width: 200px;
+  }
+
+  .list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  .listItem {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+  }
+  .time {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .temp {
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: auto;
+  }
+  .icon {
+    width: 35px;
     margin-left: auto;
     margin-right: auto;
     filter: drop-shadow(0px 0px 0px #fff);
