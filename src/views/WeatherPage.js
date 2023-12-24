@@ -14,10 +14,6 @@ function WeatherPage() {
   const navigate = useNavigate();
   const currentTime = weatherData.location.localtime;
 
-  // console.log(weatherData);
-  // console.log(weatherForecastList);
-  // console.log(weatherData.forecast.forecastday[0].astro);
-
   useEffect(() => {
     if (currentTime && weatherData.forecast.forecastday) {
       const index = Number(currentTime.replace(/...$/, "").split(" ").pop());
@@ -56,7 +52,6 @@ function WeatherPage() {
             <ForecastList forecast={weatherData.forecast} />
           </div>
           <div>
-            {console.log()}
             {weatherForecastList[0] && (
               <TodayWeatherInfo
                 currentWeatherInfo={weatherForecastList[0]}

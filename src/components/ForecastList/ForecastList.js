@@ -1,8 +1,6 @@
 import styles from "./ForecastList.module.css";
 
 export const ForecastList = ({ forecast }) => {
-  console.log(forecast);
-
   return (
     <div>
       <ul className={styles.forecast_list}>

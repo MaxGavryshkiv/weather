@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./TimeList.module.css";
 
 const TimeList = ({ list }) => {
-  //   console.log(list);
   return (
     <div className={styles.scrollableContainer}>
       <ul className={styles.list}>
