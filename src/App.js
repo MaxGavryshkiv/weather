@@ -13,7 +13,7 @@ import WeatherPage from "./views/WeatherPage";
 function App() {
   const router = createHashRouter([
     {
-      path: "/*",
+      path: "/",
       element: <SearchPage />,
     },
     {
